@@ -15,6 +15,7 @@
     "commands": [
       {
         "command": "requirements-md-manager.helloWorld",
+        "category": "R.md Manager",
         "title": "Hello World"
       }
     ]
