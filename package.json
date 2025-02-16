@@ -12,11 +12,22 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Requirements.md Manager",
+      "properties": {
+        "requirements-md-manager.path": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the requirements.md files."
+        }
+      }
+    },
     "commands": [
       {
-        "command": "requirements-md-manager.helloWorld",
+        "command": "requirements-md-manager.validateRequirements",
         "category": "R.md Manager",
-        "title": "Hello World"
+        "title": "Validate Requirements"
       }
     ]
   },
